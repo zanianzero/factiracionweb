@@ -1,0 +1,165 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #007bff, #00bfff, #87cefa); /* Blue gradient background */
+    min-height: 100vh; /* Set minimum height to fill the viewport */
+  }
+  
+  /* Styles for the whole app */
+  div {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header {
+    background-color: #f0f0f0; /* Light gray background for the header */
+    padding: 10px 0;
+  }
+  
+  h1 {
+    cursor: pointer;
+    margin: 0; /* Remove default margin */
+    color: rgb(0, 0, 0); /* Set the title text color to white */
+    font-size: 50px; /* Adjust the font size */
+  }
+  
+  /* Styles for the navbar */
+  nav {
+    display: flex; /* Display the list horizontally */
+    justify-content: center; /* Center the list items horizontally */
+    margin: 20px auto;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    cursor: pointer;
+    display: inline-block;
+    flex: 1; /* Equal width for all li elements */
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Add the transform property for the animation */
+    color: #000000; /* Set the default text color to black */
+  }
+  
+  li:hover {
+    background-color: #007bff; /* Change the background to black on hover */
+    color: #ffffff; /* Set the text color to white on hover */
+  }
+  
+  /* Animation for the navbar items */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation on click */
+  li.clicked {
+    animation: fadeInOut 0.5s;
+    transform: scale(1.1); /* Scale up the button on click */
+  }
+  
+  /* Media query for small screens */
+  @media (max-width: 400px) {
+    li {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+  
+  /* Styles for buttons */
+  button {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #00bfff;
+    transform: scale(1.1);
+  }
+  
+  /* Styles for the form inputs */
+  input[type="date"],
+  select,
+  input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 5px;
+  }
+  
+  select {
+    width: 200px;
+  }
+  
+  /* Styles for the table */
+  table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 300px;
+    text-align: left;
+  }
+  
+  th,
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #000;
+  }
+  
+  /* Styles for the details list */
+  ul {
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0;
+    width: 300px;
+    text-align: left;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the main title */
+  h2 {
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Styles for the button to add details */
+  button.add-detail-button {
+    background-color: #87cefa;
+    color: #000;
+  }
+  
+  button.add-detail-button:hover {
+    background-color: #00bfff;
+    transform: scale(1.1);
+  }
+  
